@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #FCFDFD;
+  --foreground: #171717;
+  --font-sans: 'Public Sans', sans-serif;
+  --font-t: "Timmana", sans-serif;
+ 
+  
+  
+}
+
+
+/* @theme inline {
+   --font-sans: var(--font-sans); */
+  /* --primary: var(--primary);
+  --secondary: var(--secondary);
+  --light-secondary: var(--light-secondary); */
+  /* --border: #eaeaea; */
+
+/* } */
+
+@theme {
+   --font-sans: var(--font-sans);
+   --color-primary: #437D8E;
+  --color-secondary: #1B2528;
+  --color-light-secondary: #15272D9E;
+  --font-t: var(--font-t);
+  --color-primary-16:#38677629;
+  --color-background: #FCFDFD;
+  --color-foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
